@@ -5,34 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+  <style>
+    .red {
+      color: #ff0000;
+    }
+  </style>
   <body>
-    <header>
-      <nav>
-        <a href="/"><img src="./images/logo.svg" alt="Лого" /></a>
-        <ul>
-          <li><a href="" target="_blank">Студия</a></li>
-          <li><a href="" target="_blank">Портфолио</a></li>
-          <li><a href="" target="_blank">Контакты</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li>
-          <a href="mailto:info@devstudio.com" target="_blank">
-            info@devstudio.com
+    <header class="header">
+      <div class="container">
+        <nav class="header-nav">
+          <a href="/" class="header-logo">
+            <img src="./images/logo.svg" alt="Лого" />
           </a>
-        </li>
-        <li>
-          <a href="tel:+380961111111" target="_blank">+38 096 111 11 11</a>
-        </li>
-      </ul>
+          <ul class="header-nav-list">
+            <li>
+              <a href="" target="_blank" class="header-nav-link">Студия</a>
+            </li>
+            <li>
+              <a href="" target="_blank" class="header-nav-link">Портфолио</a>
+            </li>
+            <li>
+              <a href="" target="_blank" class="header-nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-adress">
+          <li>
+            <a href="mailto:info@devstudio.com" target="_blank">
+              info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+380961111111" target="_blank">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
-      <section>
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <a href="">Заказать услугу</a>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-text">
+            Эффективные решения<br />
+            для вашего бизнеса
+          </h1>
+          <a href="" class="hero-btn">Заказать услугу</a>
+        </div>
       </section>
-      <section>
+      <section class="benefits">
         <h2 style="display: none">Наши преимущества</h2>
         <ul>
           <li>
@@ -65,7 +94,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="benefits">
         <h2>Чем мы занимаемся</h2>
         <ul>
           <li><img src="./images/cards/box-1.jpg" alt="" width="370" /></li>
